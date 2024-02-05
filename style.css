@@ -1,0 +1,301 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+  @import url('https://fonts.cdnfonts.com/css/star-wars');
+
+
+* {
+    
+    margin: 0 ;
+    padding: 0 ; 
+    box-sizing: border-box;
+    
+    
+    }
+
+body{
+
+
+    height: 100vh;
+    width: 100vw;
+    background: #011142;
+    display: flex;
+    align-items: center;
+  
+    flex-direction: column;
+    
+
+
+}
+
+header {
+
+
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 70px 0 70px;
+  
+
+}
+
+.logo img {
+
+    height: 20%;
+    width: 20%;
+
+
+}
+
+
+
+.social-media-icons{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+   
+   
+    border-radius:20px;
+    gap: 25px;
+    padding: 0 25px 0 25px;
+ 
+
+}
+
+.social-media-icons img{
+
+    
+    height: 40px;
+    width: 40px;
+
+   
+    cursor: pointer;
+}
+
+
+
+    .main-content {
+
+        width: 100%;
+        display: grid;
+        flex-direction:column;
+        margin-top: 30px;
+        grid-template-columns: 1fr 1fr  1fr   1fr 1fr ;
+        row-gap:15px;
+        column-gap:15px ;
+    
+
+    }
+
+
+
+
+
+
+   
+
+
+
+
+    .card {
+
+        width: 210px;
+        height: 300px;
+        background-color: aquamarine;
+        border-radius: 10px;
+     
+        background-position: 65% 70%;
+
+        font-family: 'Star Wars', sans-serif ;
+       background-image: url("https://starwars-visualguide.com/assets/img/characters/1.jpg");
+       background-size: cover;
+       transition: 0.5s;
+       cursor: pointer;
+       display: flex;
+       align-items: end;
+       justify-content: center;
+
+    }
+
+
+    .card:hover {
+
+        transform: scale(1.02);
+
+    }
+
+
+
+
+.character-name {
+   
+    font-family: 'Star Wars', sans-serif;
+    height: 25%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color:#ffe81f;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+footer {
+
+    height: 100px;
+    width: 100%;
+    color:#ffe81f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:  'Stardos', sans-serif;
+    text-align: center;
+    background: #071338;
+    font-weight: 100;
+    row-gap: 10px;
+    margin: 10px 0 20px 0;
+    padding: 50px;
+
+}
+
+
+
+.buttons {
+
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    outline: 0;
+    border: 0;
+    
+
+}
+
+#back-button {
+
+    visibility: hidden;
+
+}
+
+.back-button {
+
+    background: #011142;
+    border: 0;
+    outline: 0;
+ 
+    cursor: pointer;
+
+}
+
+.back-button img {
+
+    width: 40px;
+    height: 40px;
+
+}
+
+.next-button {
+
+    background: #011142;
+    border: 0;
+    outline: 0;
+ 
+    cursor: pointer;
+}
+
+.next-button img{
+
+
+    width: 40px;
+    height: 40px;
+
+  
+  
+  
+  
+}
+
+
+
+.footer-logo {
+
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1.3rem;
+
+}
+
+.footer-copy  {
+
+    color:white;
+}
+
+
+
+
+.modal {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+   
+    position:fixed;
+    top:0;
+
+    visibility: hidden; 
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  
+   
+    width: 25vw;
+    height: 70vh;
+    background-color:#020a23;
+    border-radius: 12px;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    row-gap: 25px;
+
+}
+
+.modal-text {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Star Wars', sans-serif ;
+    color:#ffe81f;
+    font-size: 0.9rem;
+}
+
+.modal-avatar {
+    margin-top: 30px;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+
+    outline: 0;
+    background-size:cover;
+
+
+
+}
