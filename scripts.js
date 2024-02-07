@@ -255,7 +255,7 @@ async function getData (url) {
     try {
 
           const response = await fetch (currentPageUrl);
-          const responseJson = response.json();
+          const responseJson = await response.json();
           console.log(responseJson);
       
           await getData(responseJson.next);
@@ -278,7 +278,7 @@ async function loadPreviousPage () {
     try {
 
           const response = await fetch (currentPageUrl) ;
-          const responseJson = response.json() ;
+          const responseJson = await response.json() ;
           console.log(responseJson);
         await getData (responseJson.previous);
 
