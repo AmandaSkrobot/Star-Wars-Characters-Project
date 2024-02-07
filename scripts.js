@@ -62,9 +62,7 @@ async function getData (url) {
         card.appendChild(characterName)
 
 
-        const mainContent = document.getElementById('main-content')
-        mainContent.appendChild(card)
-           
+       
         card.onclick = () => {
 
             const modal = document.getElementById('modal')
@@ -142,14 +140,12 @@ async function getData (url) {
  
       
        
-
+       const mainContent = document.getElementById('main-content')
+        mainContent.appendChild(card)
+           
+           
         
-      
-   
-          
-  
-    
-      });
+     });
 
       const nextButton = document.getElementById('next-button');
       const backButton = document.getElementById('back-button');
@@ -258,15 +254,15 @@ async function getData (url) {
 
     try {
 
-          const response = await fetch (currentPageUrl)
-          const responseJson = response.json()
+          const response = await fetch (currentPageUrl);
+          const responseJson = response.json();
           console.log(responseJson);
       
-          await getData (responseJson.next)
+          await getData(responseJson.next);
 
     } catch (error){
         console.log (error)
-        alert('Erro ao carregar a próxima página ')
+        alert('Erro ao carregar a próxima página ');
     }
 
 
@@ -281,14 +277,15 @@ async function loadPreviousPage () {
 
     try {
 
-          const response = await fetch (currentPageUrl)
-          const responseJson = response.json()
+          const response = await fetch (currentPageUrl) ;
+          const responseJson = response.json() ;
           console.log(responseJson);
-        await getData (responseJson.previous)
+        await getData (responseJson.previous);
 
-    } catch {
+    } catch(error) {
 
-        alert('Erro ao carregar a página anterior ')
+        alert('Erro ao carregar a página anterior ');
+        console.log(error);
     }
 
 
