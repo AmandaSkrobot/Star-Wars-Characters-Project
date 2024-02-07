@@ -266,7 +266,7 @@ async function getData (url) {
 
     } catch (error){
         console.log (error)
-        alert('Erro ao carregar a próxima ')
+        alert('Erro ao carregar a próxima página ')
     }
 
 
